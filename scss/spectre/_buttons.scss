@@ -1,3 +1,8 @@
+@use "sass:color";
+@use 'variables' as *;
+@use '../override';
+@use 'mixins' as *;
+
 // Buttons
 .btn {
   appearance: none;
@@ -30,7 +35,7 @@
   &:active,
   &.active {
     background: $primary-color-dark;
-    border-color: darken($primary-color-dark, 5%);
+    border-color: color.adjust($primary-color-dark, $lightness: -5%, $space: hsl);
     color: $light-color;
     text-decoration: none;
     &.loading {
@@ -55,14 +60,14 @@
     color: $light-color;
     &:focus,
     &:hover {
-      background: darken($primary-color-dark, 2%);
-      border-color: darken($primary-color-dark, 5%);
+      background: color.adjust($primary-color-dark, $lightness: -2%, $space: hsl);
+      border-color: color.adjust($primary-color-dark, $lightness: -5%, $space: hsl);
       color: $light-color;
     }
     &:active,
     &.active {
-      background: darken($primary-color-dark, 4%);
-      border-color: darken($primary-color-dark, 7%);
+      background: color.adjust($primary-color-dark, $lightness: -4%, $space: hsl);
+      border-color: color.adjust($primary-color-dark, $lightness: -7%, $space: hsl);
       color: $light-color;
     }
     &.loading {

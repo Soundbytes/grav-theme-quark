@@ -1,9 +1,13 @@
+@use 'sass:color';
+@use '../variables' as *;
+@use '../../override';
+
 // Background color utility mixin
 @mixin bg-color-variant($name: ".bg-primary", $color: $primary-color) {
   #{$name} {
     background: $color !important;
 
-    @if (lightness($color) < 60) {
+    @if (color.channel($color, "lightness", $space: hsl) < 60) {
       color: $light-color;
     }
   }
@@ -18,10 +22,10 @@
   a#{$name} {
     &:focus,
     &:hover {
-      color: darken($color, 5%);
+      color: color.adjust($color, $lightness: -5%);
     }
     &:visited {
-      color: lighten($color, 5%);
+      color: color.adjust($color, $lightness: 5%);
     }
   }
 }

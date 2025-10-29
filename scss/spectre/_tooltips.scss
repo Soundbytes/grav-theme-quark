@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Tooltips
 .tooltip {
   position: relative;

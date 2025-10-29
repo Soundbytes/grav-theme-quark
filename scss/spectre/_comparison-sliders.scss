@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Image comparison slider
 // Credit: http://codepen.io/solipsistacp/pen/Gpmaq
 .comparison-slider {

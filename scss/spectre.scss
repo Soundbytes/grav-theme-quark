@@ -1,53 +1,53 @@
 // Variables and mixins
-@import "theme/variables";
-@import "spectre/variables";
-@import "spectre/mixins";
+@use "spectre/variables" as *;
+@use "override" as *;
+@use "spectre/mixins" as *;
 
 /*! Spectre.css v#{$version} | MIT License | github.com/picturepan2/spectre */
 // Reset and dependencies
-@import "spectre/normalize";
-@import "spectre/base";
+@use "spectre/normalize";
+@use "spectre/base";
 
 // Elements
-@import "spectre/typography";
-@import "spectre/asian";
-@import "spectre/tables";
-@import "spectre/buttons";
-@import "spectre/forms";
-@import "spectre/labels";
-@import "spectre/codes";
-@import "spectre/media";
+@use "spectre/typography";
+@use "spectre/asian";
+@use "spectre/tables";
+@use "spectre/buttons";
+@use "spectre/forms";
+@use "spectre/labels";
+@use "spectre/codes";
+@use "spectre/media";
 
 // Layout
-@import "spectre/layout";
-@import "spectre/hero";
-@import "spectre/navbar";
+@use "spectre/layout";
+@use "spectre/hero";
+@use "spectre/navbar";
 
 // Components
-@import "spectre/accordions";
-@import "spectre/avatars";
-@import "spectre/badges";
-@import "spectre/breadcrumbs";
-@import "spectre/bars";
-@import "spectre/cards";
-@import "spectre/chips";
-@import "spectre/dropdowns";
-@import "spectre/empty";
-@import "spectre/menus";
-@import "spectre/modals";
-@import "spectre/navs";
-@import "spectre/pagination";
-@import "spectre/panels";
-@import "spectre/popovers";
-@import "spectre/steps";
-@import "spectre/tabs";
-@import "spectre/tiles";
-@import "spectre/toasts";
-@import "spectre/tooltips";
+@use "spectre/accordions";
+@use "spectre/avatars";
+@use "spectre/badges";
+@use "spectre/breadcrumbs";
+@use "spectre/bars";
+@use "spectre/cards";
+@use "spectre/chips";
+@use "spectre/dropdowns";
+@use "spectre/empty";
+@use "spectre/menus";
+@use "spectre/modals";
+@use "spectre/navs";
+@use "spectre/pagination";
+@use "spectre/panels";
+@use "spectre/popovers";
+@use "spectre/steps";
+@use "spectre/tabs";
+@use "spectre/tiles";
+@use "spectre/toasts";
+@use "spectre/tooltips";
 
 // Utility classes
-@import "spectre/animations";
-@import "spectre/utilities";
+@use "spectre/animations";
+@use "spectre/utilities";
 
 // Extras
-@import "theme/extensions";
+@use "theme/extensions";

@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Filters 
 // The number of filter options 
 $filter-number: 8 !default;

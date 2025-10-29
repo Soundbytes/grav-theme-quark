@@ -1,3 +1,7 @@
+@use '../spectre/variables' as *;
+@use '../override';
+@use 'animation' as *;
+
 .modular-hero {
   #to-start {
     bottom: 3.5rem;

@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Optimized for East Asian CJK
 html:lang(zh),
 html:lang(zh-Hans),

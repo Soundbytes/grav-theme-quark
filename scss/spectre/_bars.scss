@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Bars
 .bar {
   background: $bg-color-dark;

@@ -1,3 +1,9 @@
+@use '../spectre/variables' as *;
+@use '../override';
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'animation' as *;
+
 #header {
   width: 100%;
   height: $header-height-large;

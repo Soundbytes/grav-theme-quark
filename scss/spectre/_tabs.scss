@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Tabs
 .tab {
   align-items: center;

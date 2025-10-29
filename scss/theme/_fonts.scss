@@ -1,1 +1,4 @@
+@use '../spectre/variables' as *;
+@use '../override';
+
 $title-font-family: $base-font-family, $fallback-font-family !default;

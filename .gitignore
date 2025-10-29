@@ -1,2 +1,7 @@
 node_modules
 images/logo/*
+yarn.lock
+package-lock.json
+css-compiled/*
+*.ignore
+

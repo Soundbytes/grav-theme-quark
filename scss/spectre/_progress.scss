@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Progress
 // Credit: https://css-tricks.com/html5-progress-element/
 .progress {

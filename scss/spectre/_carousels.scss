@@ -1,6 +1,7 @@
+@use 'variables' as *;
+@use '../override';
+
 // Carousels
-// The number of carousel images
-$carousel-number: 8;
 
 %carousel-image-checked { 
   animation: carousel-slidein .75s ease-in-out 1;

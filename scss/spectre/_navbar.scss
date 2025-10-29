@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Navbar
 .navbar {
   align-items: stretch;

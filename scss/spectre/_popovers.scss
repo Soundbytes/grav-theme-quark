@@ -1,3 +1,7 @@
+@use 'variables' as *;
+@use '../override';
+@use 'mixins' as *;
+
 // Popovers
 .popover {
   display: inline-block;

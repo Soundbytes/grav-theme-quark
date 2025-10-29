@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Cards
 .card {
   background: $bg-color-light;

@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../../override';
+
 // Margin utility mixin
 @mixin margin-variant($id: 1, $size: $unit-1) {
   .m-#{$id} {

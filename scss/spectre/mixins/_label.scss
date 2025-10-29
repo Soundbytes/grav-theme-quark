@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../../override';
+
 // Label base style
 @mixin label-base() {
   border-radius: $border-radius;

@@ -1,6 +1,5 @@
-// Icon variables
-$icon-border-width: $border-width-lg;
-$icon-prefix: "icon";
+@use '../variables' as *;
+@use '../../override';
 
 // Icon base style
 .#{$icon-prefix} {

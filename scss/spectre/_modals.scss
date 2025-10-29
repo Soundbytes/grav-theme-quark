@@ -1,3 +1,7 @@
+@use 'variables' as *;
+@use '../override';
+@use 'mixins' as *;
+
 // Modals
 .modal {
   align-items: center;

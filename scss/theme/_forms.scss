@@ -1,3 +1,7 @@
+@use '../spectre/variables' as *;
+@use '../override';
+@use 'mixins' as *;
+
 form {
   .button-wrapper {
     margin-top: 0.75rem;
@@ -25,7 +29,7 @@ form {
 
       label {
         display: inherit;
-        padding: (($control-size-sm - $line-height) / 2) $control-padding-x (($control-size-sm - $line-height) / 2) ($control-icon-size + $control-padding-x);
+        padding: (($control-size-sm - $line-height) * 0.5) $control-padding-x (($control-size-sm - $line-height) * 0.5) ($control-icon-size + $control-padding-x);
         margin: inherit;
 
         &:before {

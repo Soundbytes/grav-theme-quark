@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Layout
 .container {
   margin-left: auto;
@@ -5,8 +8,6 @@
   padding-left: $layout-spacing;
   padding-right: $layout-spacing;
   width: 100%;
-
-  $grid-spacing: ($layout-spacing / ($layout-spacing * 0 + 1)) * $html-font-size;
 
   &.grid-xl {
     max-width: $grid-spacing * 2 + $size-xl;

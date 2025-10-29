@@ -1,0 +1,139 @@
+// 
+// Override default variable values of the spectre scss framework 
+//
+// Usage: 
+// 1) create a copy of this file with the name _overrides.scss
+//    in the themes's scss directory (this folder's parent directory)
+// 2) uncomment the lines containing variables to be modified
+// 3) replace original variable values with the desired ones
+// 
+
+@use "sass:color";
+@use "spectre/variables" as v;
+
+// Core features
+    // v.$rtl: false;
+
+// Core colors
+    // v.$primary-color: #5755d9;
+    // v.$primary-color-dark: color.adjust(v.$primary-color, v.$lightness: -3%, v.$space: hsl);
+    // v.$primary-color-light: color.adjust(v.$primary-color, v.$lightness: 3%, v.$space: hsl);
+    // v.$secondary-color: color.adjust(v.$primary-color, v.$lightness: 37.5%, v.$space: hsl);
+    // v.$secondary-color-dark: color.adjust(v.$secondary-color, v.$lightness: -3%, v.$space: hsl);
+    // v.$secondary-color-light: color.adjust(v.$secondary-color, v.$lightness: 3%, v.$space: hsl);
+
+// Gray colors
+    // v.$dark-color: #303742;
+    // v.$light-color: #fff;
+    // v.$gray-color: color.adjust(v.$dark-color, v.$lightness: 55%, v.$space: hsl);
+    // v.$gray-color-dark: color.adjust(v.$gray-color, v.$lightness: -30%, v.$space: hsl);
+    // v.$gray-color-light: color.adjust(v.$gray-color, v.$lightness: 20%, v.$space: hsl);
+
+    // v.$border-color: color.adjust(v.$dark-color, v.$lightness: 65%, v.$space: hsl);
+    // v.$border-color-dark: color.adjust(v.$border-color, v.$lightness: -10%, v.$space: hsl);
+    // v.$border-color-light: color.adjust(v.$border-color, v.$lightness: 8%, v.$space: hsl);
+    // v.$bg-color: color.adjust(v.$dark-color, v.$lightness: 75%, v.$space: hsl);
+    // v.$bg-color-dark: color.adjust(v.$bg-color, v.$lightness: -3%, v.$space: hsl);
+    // v.$bg-color-light: v.$light-color;
+
+// Control colors
+    // v.$success-color: #32b643;
+    // v.$warning-color: #ffb700;
+    // v.$error-color: #e85600;
+
+// Other colors
+    // v.$code-color: #d73e48;
+    // v.$highlight-color: #ffe9b3;
+    // v.$body-bg: v.$bg-color-light;
+    // v.$body-font-color: color.adjust(v.$dark-color, v.$lightness: 5%, v.$space: hsl);
+    // v.$link-color: v.$primary-color;
+    // v.$link-color-dark: color.adjust(v.$link-color, v.$lightness: -10%, v.$space: hsl);
+    // v.$link-color-light: color.adjust(v.$link-color, v.$lightness: 10%, v.$space: hsl);
+
+// Fonts
+    // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+    // v.$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+    // v.$mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
+    // v.$fallback-font-family: "Helvetica Neue", sans-serif;
+    // v.$cjk-zh-hans-font-family: v.$base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", v.$fallback-font-family;
+    // v.$cjk-zh-hant-font-family: v.$base-font-family, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", v.$fallback-font-family;
+    // v.$cjk-jp-font-family: v.$base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, v.$fallback-font-family;
+    // v.$cjk-ko-font-family: v.$base-font-family, "Malgun Gothic", v.$fallback-font-family;
+    // v.$body-font-family: v.$base-font-family, v.$fallback-font-family;
+
+// Unit sizes
+    // v.$unit-o: .05rem;
+    // v.$unit-h: .1rem;
+    // v.$unit-1: .2rem;
+    // v.$unit-2: .4rem;
+    // v.$unit-3: .6rem;
+    // v.$unit-4: .8rem;
+    // v.$unit-5: 1rem;
+    // v.$unit-6: 1.2rem;
+    // v.$unit-7: 1.4rem;
+    // v.$unit-8: 1.6rem;
+    // v.$unit-9: 1.8rem;
+    // v.$unit-10: 2rem;
+    // v.$unit-12: 2.4rem;
+    // v.$unit-16: 3.2rem;
+
+// Font sizes
+    // v.$html-font-size: 20px;
+    // v.$html-line-height: 1.5;
+    // v.$font-size: .8rem;
+    // v.$font-size-sm: .7rem;
+    // v.$font-size-lg: .9rem;
+    // v.$line-height: 1.2rem;
+
+// Sizes
+    // v.$layout-spacing: v.$unit-2 !default; // when changing this variable's unit make sure to also adapt v.$grid spacing accordingly!
+    // v.$grid-spacing: calc(v.$layout-spacing / 1rem) * v.$html-font-size !default;
+    // v.$layout-spacing-lg: v.$unit-4;
+    // v.$grid-spacing: v.$layout-spacing;
+    // v.$border-radius: v.$unit-h;
+    // v.$border-width: v.$unit-o;
+    // v.$border-width-lg: v.$unit-h;
+    // v.$control-size: v.$unit-9;
+    // v.$control-size-sm: v.$unit-7;
+    // v.$control-size-lg: v.$unit-10;
+    // v.$control-padding-x: v.$unit-2;
+    // v.$control-padding-x-sm: v.$unit-2 * .75;
+    // v.$control-padding-x-lg: v.$unit-2 * 1.5;
+    // v.$control-padding-y: (v.$control-size - v.$line-height) * 0.5 - v.$border-width;
+    // v.$control-padding-y-sm: (v.$control-size-sm - v.$line-height) * 0.5 - v.$border-width;
+    // v.$control-padding-y-lg: (v.$control-size-lg - v.$line-height) * 0.5 - v.$border-width;
+    // v.$control-icon-size: .8rem;
+
+    // v.$control-width-xs: 180px;
+    // v.$control-width-sm: 320px;
+    // v.$control-width-md: 640px;
+    // v.$control-width-lg: 960px;
+    // v.$control-width-xl: 1280px;
+
+// module intern
+    // v.$carousel-number: 8;
+
+// Responsive breakpoints
+    // v.$size-xs: 480px;
+    // v.$size-sm: 600px;
+    // v.$size-md: 840px;
+    // v.$size-lg: 960px;
+    // v.$size-xl: 1280px;
+    // v.$size-2x: 1440px;
+
+    // v.$responsive-breakpoint: v.$size-xs;
+
+// Z-index
+    // v.$zindex-0: 1;
+    // v.$zindex-1: 100;
+    // v.$zindex-2: 200;
+    // v.$zindex-3: 300;
+    // v.$zindex-4: 400;
+
+    // numbers and sizes
+    // v.$carousel-number: 8 !default;
+
+    // Icon variables
+    // v.$icon-border-width: v.$border-width-lg;
+    // v.$icon-prefix: "icon";
+

@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Off canvas menus
 $off-canvas-breakpoint: $size-lg !default;
 

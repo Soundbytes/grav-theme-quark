@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../override';
+
 // Accordions
 .accordion {
   input:checked ~,

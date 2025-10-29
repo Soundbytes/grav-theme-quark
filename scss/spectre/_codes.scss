@@ -1,7 +1,12 @@
+@use "sass:color";
+@use 'variables' as *;
+@use '../override';
+@use 'mixins' as *;
+
 // Codes
 code {
   @include label-base();
-  @include label-variant($code-color, lighten($code-color, 42.5%));
+  @include label-variant($code-color, color.adjust($code-color, $lightness: 42.5%, $space: hsl));
   font-size: 85%;
 }
 

@@ -1,7 +1,12 @@
+@use "sass:color";
+@use 'variables' as *;
+@use '../override';
+@use 'mixins' as *;
+
 // Labels
 .label {
   @include label-base();
-  @include label-variant(lighten($body-font-color, 5%), $bg-color-dark);
+  @include label-variant(color.adjust($body-font-color, $lightness: 5%, $space: hsl), $bg-color-dark);
   display: inline-block;
 
   // Label rounded

@@ -1,3 +1,7 @@
+@use 'variables' as *;
+@use '../override';
+@use 'mixins' as *;
+
 // Toasts
 .toast {
   @include toast-variant($dark-color);
